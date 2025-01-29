@@ -1,0 +1,103 @@
+{ "editor.suggest.showReferences": true,
+  "typescript.referencesCodeLens.enabled": true,
+  // "files.autoSave": "afterDelay",
+  "glassit.alpha": 190,
+  "glassit.step": 5,  
+  "window.newWindowDimensions": "offset",
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 30,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.lineHeight": 1.8,
+  "editor.fontFamily": "JetBrains Mono Medium",
+  "prettier.semi": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.fontLigatures": true,
+  "workbench.layoutControl.enabled": false,
+  "explorer.compactFolders": false,
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-w>": false,
+    "<C-t>": false
+  },
+  "vim.useSystemClipboard": true,
+  // "vim.enableNeovim": true,
+  // "viu.neovimPath": "/user"
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.formatDocument"]
+    }
+  ],
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.pageUp",
+      "sequence": [
+        {
+          "command": "editorScroll",
+          "args": { "to": "up", "by": "wrappedLine", "value": 32 }
+        },
+        { "command": "cursorMove", "args": { "to": "viewPortCenter" } }
+      ]
+    },
+    {
+      "command": "multiCommand.pageDown",
+      "sequence": [
+        {
+          "command": "editorScroll",
+          "args": { "to": "down", "by": "wrappedLine", "value": 32 }
+        },
+        { "command": "cursorMove", "args": { "to": "viewPortCenter" } }
+      ]
+    }
+  ],
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+  "apc.font.family": "JetBrains Mono Regular",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "window.commandCenter": false,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "eslint.validate": ["javascript", "javascriptreact"],
+  "editor.lineNumbers": "relative",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.tabSize": 2
+  },
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "material-icon-theme.folders.theme": "classic",
+  "material-icon-theme.folders.color": "#555",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Dobri Next -C06- Ayu",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "window.menuBarVisibility": "toggle",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "workbench.activityBar.location": "hidden"
+}

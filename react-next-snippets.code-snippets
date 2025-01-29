@@ -1,0 +1,14 @@
+{
+"hook": {
+	"scope": "javascript",
+	"prefix": "rhk",
+	"body": [
+		"import { useContext } from 'react'",
+		"import { $1Context } from '$2'",
+		"",
+		"export default function use$1(){",
+		"  return useContext($1Context)",
+		"}"
+	]
+}
+}
